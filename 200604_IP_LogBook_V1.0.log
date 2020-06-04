@@ -1,0 +1,155 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.29)  4 JUN 2020 12:38
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**200604_IP_LogBook_V1.0.tex
+(./200604_IP_LogBook_V1.0.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-05-15>
+(f:/texlive/2020/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(f:/texlive/2020/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(f:/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(f:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(f:/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(f:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-05-05 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count175
+\l__pdf_internal_box=\box45
+)
+No file 200604_IP_LogBook_V1.0.aux.
+\openout1 = `200604_IP_LogBook_V1.0.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+(f:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count176
+\scratchdimen=\dimen135
+\scratchbox=\box46
+\nofMPsegments=\count177
+\nofMParguments=\count178
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count179
+\MPscratchDim=\dimen136
+\MPnumerator=\count180
+\makeMPintoPDFobject=\count181
+\everyMPtoPDFconversion=\toks16
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 9.
+
+Overfull \hbox (50.0223pt too wide) in paragraph at lines 31--31
+\OT1/cmr/bx/n/12 ing tools on a pre-vi-ously anal-ysed mi-crostruc-ture [](21/0
+4/2020)[] 
+ []
+
+[1
+
+{f:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Overfull \hbox (57.16747pt too wide) in paragraph at lines 102--103
+[][]\OT1/cmr/m/n/10 See Image-Processing/testcase[]IP[]V3.0.ipynb, Ti64[]binary
+[]V1.0.png & Ti64[]V1.0.mesh
+ []
+
+
+Overfull \hbox (17.58958pt too wide) in paragraph at lines 104--105
+\OT1/cmr/m/n/10 seg-mented grains and saves to repos-i-tory (im-age called: Ti6
+4[]binary[]V1.0.png) 
+ []
+
+
+Overfull \hbox (6.43118pt too wide) in paragraph at lines 105--106
+[]\OT1/cmr/m/n/10 Exported im-age into Gmsh soft-ware (https://gmsh.info/) to c
+re-ate a square-
+ []
+
+
+Overfull \hbox (6.21066pt too wide) in paragraph at lines 105--106
+\OT1/cmr/m/n/10 based mesh of im-age for fu-ture FEM anal-y-sis (mesh called: T
+i64[]V1.0.mesh) 
+ []
+
+
+Overfull \hbox (47.83473pt too wide) in paragraph at lines 108--108
+\OT1/cmr/bx/n/12 then meshed bi-nary im-age us-ing Gmesh soft-ware [](01/06/202
+0)[] 
+ []
+
+
+Overfull \hbox (57.16747pt too wide) in paragraph at lines 111--112
+[][]\OT1/cmr/m/n/10 See Image-Processing/testcase[]IP[]V4.0.ipynb, Ti64[]binary
+[]V2.0.png & Ti64[]V2.0.mesh
+ []
+
+[3] [4] (./200604_IP_LogBook_V1.0.aux) ) 
+Here is how much of TeX's memory you used:
+ 1323 strings out of 480476
+ 17975 string characters out of 5903481
+ 259069 words of memory out of 5000000
+ 17406 multiletter control sequences out of 15000+600000
+ 536928 words of font info for 39 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 25i,6n,37p,329b,227s stack positions out of 5000i,500n,10000p,200000b,80000s
+{f:/texlive/2020/texmf-dist/fonts/enc/d
+vips/cm-super/cm-super-ts1.enc}<f:/texlive/2020/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmbx10.pfb><f:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb><f:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><f:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><f:/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><f:/texlive/2020/
+texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on 200604_IP_LogBook_V1.0.pdf (4 pages, 78675 bytes).
+PDF statistics:
+ 42 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

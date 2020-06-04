@@ -1,0 +1,128 @@
+\documentclass{article}
+\usepackage{xcolor}
+
+
+\title{Image Processing – Methodology Log}
+\author{Joshua Collins}
+
+\begin{document}
+\maketitle
+
+\section{Image Processing Logs}
+
+See below the steps for image processing:
+
+\subsection{Tested ‘Skimage’ - python image processing package (link: https://scikit-image.org/)  \textcolor{blue}{(17/04/2020)}}
+
+\begin{itemize}
+\item \textcolor{red}{See Image-Processing/testcase\_IP\_V1.0.ipynb}
+\item Tested algorithms on an image of a ferritic microstructure taken from Materials Science and Engineering: An Introduction, W. D. Callister, 6th Edition.
+\item Testing included:
+\begin{itemize}
+\item Manipulating image colour and contrast
+\item Using filters (e.g. sobel filter) and transforms (e.g. watershed)
+\item Combining manipulation, filters and transforms to segment the image into separate labelled grains
+\item Use skimage measuring tools to measure properties of segmented grains (i.e. measured areas and used this to estimate and average grain size)
+\end{itemize}
+\item Testcase 1 primarily used to test skimage algorithms and understand the image manipulation interface
+\item Re-named to 'testcase\_IP\_V1.0' on 23/04/2020
+\end{itemize}
+
+\subsection{Tested ‘Skimage’ processing and subsequent measuring tools on a previously analysed microstructure \textcolor{blue}{(21/04/2020)}}
+
+\begin{itemize}
+\item \textcolor{red}{See Image-Processing/testcase\_IP\_V2.0.ipynb}
+\item Tested algorithms on a thermally etched steel micrograph showing prior austenite grains (image was taken by Josh and approved by Dr Ed Pickering [lead research supervisor])
+\item Linear intercept method previously used to determine grain size of 24.9 microns
+\item Test case was split into various steps (\textcolor{red}{see notebook}):
+\begin{itemize}
+\item Importing Packages
+\begin{itemize}
+\item Imported various skimage sub-packages as well as os, numpy, and matplotlib.pyplot
+\end{itemize}
+\item Reading the Image
+\begin{itemize}
+\item Image was read, type and shape was determined before manipulation
+\end{itemize}
+\item Manipulating the Image
+\begin{itemize}
+\item Image cropped to region of highest focus
+\end{itemize}
+\item Segmenting the Image
+\begin{itemize}
+\item Used a combination of a Sobel filter and a watershed transform to segment the image and label each grain
+\end{itemize}
+\item Measuring Grain Size
+\begin{itemize}
+\item Skimages’ ‘measure’ was used to determine average grain size (assuming all grains were perfect circles)
+\item Pixels were ceonverted to microns using the scale bar on the image
+\item Average grain size found
+\end{itemize}
+\end{itemize}
+\item Measured grain size = 32.7 microns
+\begin{itemize}
+\item Discrepancy due to technical assumptions (i.e. grains = circles) and overestimation of grain boundary width during segmentation
+\end{itemize}
+\end{itemize}
+
+\subsection{Edited testcase 2 \textcolor{blue}{(23/04/2020)}}
+
+\begin{itemize}
+\item \textcolor{red}{See Image-Processing/testcase\_IP\_V2.0.ipynb history log}
+\item Edited section 3. Manipulating the Image
+\begin{itemize}
+\item Adjusted image exposure to help differentiate between grain boundary and grain interior
+\end{itemize}
+\item Re-ran rest of notebook
+\item Change resulted in a new measured grain size = 23.5 microns 
+\begin{itemize}
+\item  approx. 1.4 microns difference between experimentally determined value
+\end{itemize}
+\end{itemize}
+
+\subsection{Edited testcase 2 \textcolor{blue}{(28/06/2020)}}
+
+\begin{itemize}
+\item \textcolor{red}{See Image-Processing/testcase\_IP\_V2.0.ipynb history log}
+\item To produce a binary image of the segmented grains
+\item Determined that the best place to obtain this image is before labelling 
+\begin{itemize}
+\item When the image is named ‘segmentation’ (after a watershed transform is applied)
+\end{itemize}
+\item Binary image required for meshing using Gmsh software
+\item Conclusions: happy with image processing notebook to successfully process images for meshing and subsequent FEM
+\begin{itemize}
+\item Possible automation of image processing could be coded in python
+\end{itemize}
+\end{itemize}
+
+\subsection{Used image processing notebook to produce binary image of Ti64 microstructure and then meshed binary image using Gmesh software \textcolor{blue}{(01/06/2020)}}
+
+\begin{itemize}
+\item \textcolor{red}{See Image-Processing/testcase\_IP\_V3.0.ipynb, Ti64\_binary\_V1.0.png \& Ti64\_V1.0.mesh file}
+\item Ti64 image was obtained from Pratheek with his consent
+\item Uses skimage packages previously mentioned to produce a binary image of segmented grains and saves to repository (image called: Ti64\_binary\_V1.0.png)
+\item Exported image into Gmsh software (https://gmsh.info/) to create a square-based mesh of image for future FEM analysis (mesh called: Ti64\_V1.0.mesh)
+\end{itemize}
+
+\subsection{Used image processing notebook to produce binary image of a single grain in a Ti64 microstructure and then meshed binary image using Gmesh software \textcolor{blue}{(01/06/2020)}}
+
+\begin{itemize}
+\item \textcolor{red}{See Image-Processing/testcase\_IP\_V4.0.ipynb, Ti64\_binary\_V2.0.png \& Ti64\_V2.0.mesh file}
+\item Ti64 image was obtained from Pratheek with his consent
+\item Additional skimage sub-packages used to isolate a single grain
+\begin{itemize}
+\item Used ‘threshold’ filters and ‘clean\_border’ segmentation to remove surrounding grains from the image
+\end{itemize}
+\item Image saved to repository as binary image (named: Ti64\_binary\_V2.0.png)
+\item Used Gmsh to create square-bsaed mesh of image for FEM (mesh called: Ti64\_V2.0.mesh) 
+\item Conclusions: happy with image processing testcases (both image manipulation on python notebook and meshing in Gmsh). End testing.
+\end{itemize}
+
+\section{Current Work}
+
+\subsection{Producing binary images for FEM}
+
+\subsection{Automate python notebook}
+
+\end{document}
